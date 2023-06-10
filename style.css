@@ -1,0 +1,111 @@
+@font-face {
+    font-family:'genshin-fonte' ;
+    src: url(./assets/zh-cn.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    background-size: cover;
+    box-sizing: border-box;
+    background-image: url(./assets/Wish-Animation-2.webp);
+    gap: 10px;
+    color: white;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: genshin-fonte;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+
+.apresentacao{
+    padding: 5% 15% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    font-family: 'genshin-fonte';
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+}
+
+.titulo-destaque{
+    color: goldenrod;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: goldenrod;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+}
+
+.apresentacao__links__link img{
+    max-width: 30px;
+}
+
+.apresentacao__links__link:hover {
+    background-color: white;
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+.rodape{
+    padding: 24px   ;
+    color: blueviolet;
+    background-color: goldenrod;
+    text-align: center;
+    font-family: genshin-fonte;
+    font-weight: 24px;
+}
+
+@media (max-width:1200px){
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+}
